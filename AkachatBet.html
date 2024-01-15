@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AkachatBet</title>
+	<link rel="stylesheet" href="AkacharBet.css">
+	<script src="https://kit.fontawesome.com/cd087d14cf.js" crossorigin="anonymous"></script>
+	<script type="text/javascript"
+	  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+	 (function(){
+	emailjs.init("SFChRd0LREmxw4847");
+	 })();
+  </script>
+</head>
+
+<body>
+	<header>
+        <div class="logo">
+        <img src="logo.png" alt="logo">
+		
+		<nav>
+			<ul>
+				<li><a href="#about">Pour-nous<br></a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#team">Team </a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+			<ul class="mobile-menu">
+				<li><a href="#about">Pour-nous<br></a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#team">Team </a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="company">
+			<h2><br>Bienvenue a</h2><br><h1>Akachar Bet</h1><br>
+			<p>C'est une entreprise qui fournit des services professionnels pour la conception, la planification, la construction et la gestion de projets de génie civil.</p>
+			<a href="#about" class="btn">Learn More</a>
+		</div>
+	</header>
+	
+	<main>
+		<section id="about">
+			<div class="container">
+				<h2>Pour-nous</h2>
+				<p>C'est une entreprise spécialisée dans la conception et l'analyse de structures et de systèmes de construction. elle fournit des services de consultation, de planification et de conception pour les projets de construction. Leur expertise couvre une gamme de projets, tels que des bâtiments résidentiels, commerciaux, industriels et des infrastructures publiques.</p>
+				<p>On a la capacité à utiliser des logiciels et des technologies avancées pour créer des modèles 3D, effectuer des simulations et analyser les résultats. Cela permet d'optimiser la conception et la planification du projet pour atteindre des résultats précis et cohérents.</p>
+                <p>Nous offrons une gamme complète de services pour répondre aux besoins de nos clients.De la conception et de l'ingénierie à la gestion de projet, à l'inspection et à la supervision de la construction, en passant par l'ingénierie géotechnique et l'évaluation de l'environnement, ces entreprises peuvent aider à garantir la sécurité, l'efficacité et la durabilité des projets de construction..</p>
+			</div>
+		</section>
+		<section id="services">
+			<div class="container">
+				<h2>Nos Services</h2>
+				<div class="services">
+					<div class="service">
+						<img src="im2.jpg" alt="Service 1">
+						<h3>Conception et ingénierie</h3>
+						<p>On peut concevoir des plans, des dessins et des modèles en utilisant des logiciels et des technologies de pointe pour optimiser la conception et les coûts du projet.</p>
+					</div>
+					<div class="service">
+						<img src="im1.jpg" alt="Service 2">
+						<h3>Gestion de projet </h3>
+						<p>On peut planifier et coordonner les différentes phases du projet, y compris l'approvisionnement en matériaux, la construction, la surveillance et l'achèvement du projet.</p>
+					</div>
+					<div class="service">
+						<img src="im3.jpg" alt="Service 3">
+						<h3>Inspection et supervision de la construction</h3>
+						<p>On peut également fournir des services d'inspection et de supervision de la construction pour garantir que le projet est construit selon les spécifications du plan et des normes de sécurité.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="team">
+			<div class="container">
+				<h2>notre groupe</h2>
+				<div class="team">
+					<div class="member">
+						<img src="medali.jpg" alt="Team Member 1">
+						<h3>Mohammed ali<br>Akachar</h3>
+						<p>CEO</p>
+					</div>
+					<div class="member">
+						<img src="medali.jpg" alt="Team Member 1">
+						<h3>Mohammed ali<br>Akachar</h3>
+						<p>CEO</p>
+					</div>
+					<div class="member">
+						<img src="medali.jpg" alt="Team Member 1">
+						<h3>Mohammed ali<br>Akachar</h3>
+						<p>CEO</p>
+					</div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <form class="contact_form" action="#"></form>
+            <div class="container">
+              <h2>Contactez-nous</h2>
+              <div class="row">
+                <div class="col-6">
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" onclick="sendMail()">Send Message</button>
+                  </form>
+                </div>
+                <div class="col-6">
+                  <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Avenue Moaaouia ben abi soufiane 45, Tetouan Morocco</p>
+                    <p><i class="fa-solid fa-phone"></i> (+212) 610-577219</p>
+                    <p><i class="fa-solid fa-envelope"></i> akacharbet@gmail.com</p>
+                    <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+        </section>
+	</main>
+  <button id="scroll-to-top" title="Go to top">Top</button>
+  <script src="script.js"></script>
+  
+  
+ 
+</body>
+
+          
+				
+                    
